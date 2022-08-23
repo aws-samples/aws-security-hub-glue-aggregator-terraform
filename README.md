@@ -69,7 +69,7 @@ terraform init -backend-config=config/backend.conf
 **Option 1:**
 You can use the following samples to utilize the modules within your code:
 
-```
+```hcl
 module "reporting-admin-standalone" {
   source                        = "./modules/reporting-admin-module"
   name_prefix                   = local.name_prefix
@@ -79,7 +79,7 @@ module "reporting-admin-standalone" {
 }
 ```
 
-```
+```hcl
 module "reporting-member-standalone" {
   source = "./modules/reporting-member-single-module"
 
